@@ -1,0 +1,42 @@
+<div class="header-container">
+
+    <div class="header row">
+
+        <div class="lang-button layout-start-center row hide-xs">
+            <img id="france" src="/images/website/header/lang/france.svg" alt="france">
+            <img id="angleterre" src="/images/website/header/lang/angleterre.svg" alt="angleterre">
+            <img id="italie" src="/images/website/header/lang/italie.svg" alt="italie">
+        </div>
+
+        <div class="mobile-title hide show-xs layout-start-center row">
+            Leader Pays des Paillons
+        </div>
+
+        <div class="menu layout-center-center row hide-xs">
+            <a [class.selected]="router.isRouteActive(router.generate(['WebsiteLeader']))" [routerLink]="['WebsiteLeader']">LEADER c’est quoi ?</a>
+            <a [class.selected]="router.isRouteActive(router.generate(['WebsiteGal']))" [routerLink]="['WebsiteGal']">Le GAL des Paillons</a>
+            <a [class.selected]="router.isRouteActive(router.generate(['WebsiteAgir']))" [routerLink]="['WebsiteAgir']">Agir avec nous</a>
+            <a [class.selected]="router.isRouteActive(router.generate(['WebsiteContact']))" [routerLink]="['WebsiteContact']">Contactez-nous</a>
+        </div>
+
+        <a href="/login" class="layout-center-center login-button row hide-xs">
+            <img src="/images/website/header/ic_person_black_24px.svg">
+            <span class="text-login">Se Connecter</span>
+        </a>
+
+        <img class="mobile-toggle pointer hide show-xs" (click)="displayMobileMenu = !displayMobileMenu"
+             src="/images/website/header/ic_menu_white_36px.svg" alt="menu-mobile" />
+    </div>
+
+</div>
+
+<div [hidden]="!displayMobileMenu" class="mobile-menu">
+    <nav>
+        <ul>
+            <li><a [routerLink]="['WebsiteLeader']">LEADER c’est quoi ?</a></li>
+            <li><a [routerLink]="['WebsiteGal']">Le GAL des Paillons</a></li>
+            <li><a [routerLink]="['WebsiteAgir']">Agir avec nous !</a></li>
+            <li><a [routerLink]="['WebsiteContact']">Contactez-nous</a></li>
+        </ul>
+    </nav>
+</div>

@@ -1,0 +1,129 @@
+<div class="leader">
+
+    <h1>LEADER c’est quoi ?</h1>
+
+    <div class="subtitle1-leader txt-green">Liaison Entre Actions de Développement de l’Economie Rurale.</div>
+
+    <p class="txt-green">Impulsé par la Commission européenne dans le cadre du deuxième pilier de la Politique
+        Agricole Commune (PAC), LEADER ouvre de nouvelles voies de développement aux
+        territoires ruraux et permet de contribuer de manière significative à la création de
+        nouveaux emplois.</p>
+
+    <h2> LEADER, laboratoire européen du développement rural :</h2>
+
+    <p class="txt-green">LEADER constitue un axe méthodologique pour soutenir le (re)développement et
+        l’épanouissement des zones rurales à travers des approches et des projets partenariaux
+        innovants.</p>
+    <p class="txt-green">Il s’agit de soutien à des territoires ruraux pour des actions relatives à la mise en oeuvre
+        de stratégies définies localement par un ensemble de partenaires publics et privés.</p>
+
+    <h2>Les spécificités de LEADER :</h2>
+
+    <ol class="specificites">
+        <li>La mobilisation du territoire pour prendre en main son avenir, s’appuyant sur
+            un large partenariat d’acteurs publics et privés qui définissent en commun une
+            stratégie de développement répondant aux enjeux locaux.
+        </li>
+        <li>Une stratégie locale de développement intégrée issue d’un diagnostic du
+            territoire (qui associe plusieurs secteurs de l’économie rurale dans une approche
+            globale et transversale) et ciblée sur une priorité (qui garantit la concentration
+            des moyens et la lisibilité).
+        </li>
+        <li>Des approches novatrices apportant une réelle valeur ajoutée au territoire par
+            rapport aux opérations existantes (en termes de méthode et/ou de contenu).
+        </li>
+        <li>L’échange et le transfert d’expériences entre territoires ruraux, notamment par la
+            participation au Réseau Rural Régional et par des projets de coopération.
+        </li>
+    </ol>
+
+    <p class="txt-green">Adaptée au contexte, aux besoins et aux atouts de chaque territoire, l'approche LEADER
+        permet de faire émerger de multiples solutions novatrices, tant en termes de méthode
+        que d’actions partenariales. <br/>
+        En privilégiant l’approche "ascendante" du développement, LEADER met en valeur la
+        consultation et la participation des populations. A travers une approche multisectorielle
+        cherchant à valoriser les atouts spécifiques de chaque territoire, LEADER favorise
+        également des stratégies de développement durable.</p>
+
+    <div class="toggle">
+
+        <div class="flip" (click)="leaderToggle1 = !leaderToggle1">
+
+            <h5>La Région PACA, nouvelle autorité de Gestion</h5>
+
+            <img class="toggle-button" [class.rotate]="leaderToggle1" src="/images/ic_keyboard_arrow_down_white_36px.svg"
+                 alt="toggle-icon">
+
+        </div>
+
+        <div class="panel" [hidden]="!leaderToggle1">
+
+            <div class="subtitle2-leader">Axes prioritaires régionaux de LEADER 2014-2020 :</div>
+
+            <p><span class="txt-green"><strong>Axe 1</strong></span> : Promouvoir le développement économique par la
+                valorisation des ressources
+                du territoire</p>
+
+            <p><span class="txt-green"><strong>Axe 2 :</strong></span> Renforcer l’attractivité des territoires ruraux
+                par
+                le maintien et le développement des services</p>
+
+            <h4 class="txt-green">Deux principes transversaux complètent ces axes prioritaires :</h4>
+
+            <ol>
+
+                <li>Promotion de l’intelligence collective par la mise en réseau des acteurs du
+                    développement local
+                </li>
+                <li>Prise en compte des défis posés par la transition écologique et énergétique à
+                    l'échelle locale
+                </li>
+
+            </ol>
+
+            <h4 class="txt-green">Un accompagnement renforcé de l’Autorité de gestion :</h4>
+
+            <p>Pour accompagner les nouvelles responsabilités des GAL, le Conseil régional met en
+                place une organisation adaptée.</p>
+
+            <img class="shema-image" src='/images/website/pages/leader/shema.png' alt="schema">
+
+            <p>L’ambition du Réseau rural régional est de faciliter les échanges d’expériences et
+                d’idées, susciter l’émergence de projets et de coopérations et contribuer ainsi à la mise
+                en oeuvre du FEADER en Provence-Alpes-Côte d’Azur.
+                Depuis 2014, un espace dédié à LEADER s’est ouvert au sein du Réseau rural régional.
+                Il permet aux 13 GAL de mutualiser leurs efforts pour la mise en oeuvre du programme
+                LEADER 2014-2020. Elaboration du guide du porteur de projet LEADER, définition
+                d’un cadre d’évaluation partagé avec la Région, mise en place des Comités de
+                programmation… sont autant de chantiers que les 13 GAL conduisent ensemble au
+                sein du réseau rural.
+                Retrouvez les travaux du Réseau rural régional sur :</p>
+
+            <a href="http://www.reseaurural.fr/region/provence-alpes-cote-d-azur">www.reseaurural.fr/region/provence-alpes-cote-d-azur</a>
+        </div>
+
+    </div>
+
+    <div class="toggle">
+        <div class="flip" (click)="leaderToggle2 = !leaderToggle2">
+            <h5>13 territoires de projet selectionnés en PACA</h5>
+            <img class="toggle-button" [class.rotate]="leaderToggle2"
+                 src="/images/ic_keyboard_arrow_down_white_36px.svg" alt="toggle-icon"/>
+        </div>
+        <div class="panel" [hidden]="!leaderToggle2">
+            <p>En cours de rédaction</p>
+        </div>
+    </div>
+
+    <div class="toggle">
+        <div class="flip" (click)="leaderToggle3 = !leaderToggle3">
+            <h5>Le GAL des Paillons</h5>
+            <img class="toggle-button" [class.rotate]="display3" src="/images/ic_keyboard_arrow_down_white_36px.svg"
+                 alt="toggle-icon"/>
+        </div>
+        <div class="panel" [hidden]="!leaderToggle3">
+            <p>En cours de rédaction</p>
+        </div>
+    </div>
+
+</div>

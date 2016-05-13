@@ -1,0 +1,59 @@
+<div class="gal">
+    <h1 class="title-leader">Le GAL des Paillons</h1>
+    <div class="text1">
+        Texte d’intro rédigé par CN :
+        <p>
+            Itatusam sumenis et aut que mos alitae voluptiis molorer chitem re poreria dolum
+            none vollesernam harum facea dolo minumquam faccupt atempos am et aceatest
+            ommoditatis dolora dem la eatur as mos quo eat volorerro et re et fugitates denimento
+            eaquaeste necabo. Et voluptas eium eosam quia nimustint ad quodit velluptus is et
+            aborem illoriae porenimet, el eatiasi reri officit, quation ellaute moloruptat eos magnam
+            repudandic to te dolore ne dolupta tendia dolendamus eum ex essequae voluptati
+            vellaut mi, ipsapeditem eost quae molore voloris enim ea nobisquis ideste cus voloria
+            nos consequo con peritat.</p>
+        <p>
+            Ciation est, numendis reribus vel magnam es volumqui nobitiu ntiunt et audis re ipsae
+            necepedis perum fugitatur aborepe nis veratium res accusandi sam accaborum quia
+            voloratate am, con eiur, sit doloribus cus eum rae. Ita comnis in reperum ab ilit et ra
+            eleniassum, ut ex eatur aliquati susam, estibus magni vel ipitias que dolupta tempers
+            piciatquo venimi, quidicia sam que consequo vendis sollatqui sed minulli quaspiciist que
+            si im quate non reicipis quibusam idi re, coreped mi, sus essusdam harit quat.
+            Antios as a sit alique doluptat eribus vel moditas vid quo berro tem rataspe llauditi il min
+            pro quia duci dolorpos rendi optatem inctem que provite ipsus a sequissus, seque eium
+            doloruptae conseditio vent.</p>
+    </div>
+
+    <div class="toggle">
+        <div class="flip" (click)="galToggle1 = !galToggle1">
+            <h5>Un territoire de projet</h5>
+            <img class="toggle-button" [class.rotate]="galToggle1" src="/images/ic_keyboard_arrow_down_white_36px.svg"
+                 alt="toggle-icon"/>
+        </div>
+        <div class="panel" [hidden]="!galToggle1">
+            En rédaction
+        </div>
+    </div>
+
+    <div class="toggle">
+        <div class="flip" (click)="galToggle2 = !galToggle2">
+            <h5>Le périmètre du GAL</h5>
+            <img class="toggle-button" [class.rotate]="galToggle2" src="/images/ic_keyboard_arrow_down_white_36px.svg"
+                 alt="toggle-icon"/>
+        </div>
+        <div class="panel" [hidden]="!galToggle2">
+            Rédaction en cours
+        </div>
+    </div>
+
+    <div class="toggle">
+        <div class="flip" (click)="galToggle3 = !galToggle3">
+            <h5>Gouvernance</h5>
+            <img class="toggle-button" [class.rotate]="display1" src="/images/ic_keyboard_arrow_down_white_36px.svg"
+                 alt="toggle-icon"/>
+        </div>
+        <div class="panel" [hidden]="!galToggle3">
+            Rédaction en cours
+        </div>
+    </div>
+
+</div>

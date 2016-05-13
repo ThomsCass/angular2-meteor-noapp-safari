@@ -1,0 +1,84 @@
+.rightbar {
+
+  position: absolute;
+  right: 0;
+
+  min-width: 160px;
+  width: 160px;
+  max-width: 160px;
+
+  min-height: 760px;
+  height: 100%;
+
+  padding-top:40px;
+
+  a {
+    display: flex;
+
+    height: 100px;
+    width: 90px;
+
+    margin-bottom:20px;
+  }
+
+  #appel {
+      background: url(/images/website/rightbar/boutons/appels-en-cours.svg) no-repeat;
+      &:hover{
+        background: url(/images/website/rightbar/boutons/selected/appels-en-cours2.svg) no-repeat;
+      }
+      &.selected{
+        background: url(/images/website/rightbar/boutons/selected/appels-en-cours2.svg) no-repeat;
+      }
+  }
+
+  #projet{
+    background: url(/images/website/rightbar/boutons/jai-un-projet.svg) no-repeat;
+    &:hover{
+      background: url(/images/website/rightbar/boutons/selected/jai-un-projet2.svg) no-repeat;
+    }
+    &.selected{
+      background: url(/images/website/rightbar/boutons/selected/jai-un-projet2.svg) no-repeat;
+    }
+  }
+
+  #beneficiaire{
+    background: url(/images/website/rightbar/boutons/beneficiaire.svg) no-repeat;
+    &:hover{
+      background: url(/images/website/rightbar/boutons/selected/beneficiaire2.svg) no-repeat;
+    }
+    &.selected{
+      background: url(/images/website/rightbar/boutons/selected/beneficiaire2.svg) no-repeat;
+    }
+  }
+
+  #agenda{
+    background: url(/images/website/rightbar/boutons/agenda.svg) no-repeat;
+    &:hover{
+      background: url(/images/website/rightbar/boutons/selected/agenda2.svg) no-repeat;
+    }
+    &.selected{
+      background: url(/images/website/rightbar/boutons/selected/agenda2.svg) no-repeat;
+    }
+  }
+
+  #abecedaire{
+    background: url(/images/website/rightbar/boutons/abecedaire.svg) no-repeat;
+    &:hover{
+      background: url(/images/website/rightbar/boutons/selected/abecedaire2.svg) no-repeat;
+    }
+    &.selected{
+      background: url(/images/website/rightbar/boutons/selected/abecedaire2.svg) no-repeat;
+    }
+  }
+
+  #boite{
+    background: url(/images/website/rightbar/boutons/boite.svg) no-repeat;
+    &:hover{
+      background: url(/images/website/rightbar/boutons/selected/boite2.svg) no-repeat;
+    }
+    &.selected{
+      background: url(/images/website/rightbar/boutons/selected/boite2.svg) no-repeat;
+    }
+  }
+
+}

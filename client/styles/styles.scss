@@ -1,0 +1,70 @@
+@font-face {
+  font-family: "daxbold";
+  src: url("/fonts/dax-bold.eot");
+  src: url("/fonts/dax-bold.ttf") format("truetype");
+
+}
+
+@font-face {
+  font-family: "daxregular";
+  src: url("/fonts/dax-regular.eot");
+  src: url("/fonts/dax-regular.ttf") format("truetype");
+
+}
+
+body{
+  font-family: daxregular;
+}
+
+
+h1 {
+  color: #BBC92C;
+  margin: 10px 0;
+  font-family: daxbold;
+}
+
+h2 {
+  color: #BBC92C;
+  margin: 10px 0;
+  font-family: daxbold;
+}
+
+.txt-green {
+  color: #16635B;
+}
+
+.toggle {
+
+  margin-bottom: 20px;
+
+  .panel {
+    margin-top:20px;
+  }
+
+  .flip {
+
+    padding: 5px 0px 5px 10px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    background-color: #BBC92C;
+    line-height: 20px;
+    height: 30px;
+
+    position: relative;
+
+    cursor:pointer;
+
+    .toggle-button {
+      
+      position: absolute;
+      top:-2px;
+      right: 0px;
+
+      &.rotate {
+        transform: rotate(180deg);
+      }
+      
+    }
+
+  }
+}

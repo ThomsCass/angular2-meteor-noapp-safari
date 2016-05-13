@@ -1,0 +1,48 @@
+.leftbar {
+
+  position: absolute;
+  left: 0;
+
+  min-width: 160px;
+  width: 160px;
+  max-width: 160px;
+
+  min-height: 760px;
+  height: 100%;
+
+  background-color: #FDF9E9;
+
+  .cadre-photo {
+
+    height: 177px;
+    width: 125px;
+
+    margin-bottom: 10px;
+
+    background: url(/images/website/leftbar/cadre-photo.svg) no-repeat;
+
+    .image-cadre {
+
+      position: relative;
+      top: 64px;
+      left: 12px;
+
+      height: 100px;
+      width: 100px;
+
+    }
+
+  }
+
+  .text-cadre{
+
+    text-align: center;
+    color: #16635B;
+    font-size: 14px;
+
+    &.contact{
+      font-size:12px;
+    }
+
+  }
+}

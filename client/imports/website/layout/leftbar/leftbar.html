@@ -1,0 +1,6 @@
+<div class="leftbar layout-start-center column hide-xs">
+    <div class="cadre-photo">
+        <img class="image-cadre" [src]="urlPhoto" alt="photo">
+    </div>
+    <div class="text-cadre" [class.contact]="router.isRouteActive(router.generate(['WebsiteContact']))" [innerHtml]="text"></div>
+</div>
