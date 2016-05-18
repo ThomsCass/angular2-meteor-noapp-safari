@@ -14,8 +14,7 @@ import {WebSiteComponent} from "./imports/website/website";
 @Component({
     selector: 'app',
     template: '<router-outlet></router-outlet>',
-    directives: [ROUTER_DIRECTIVES],
-    providers: [ROUTER_PROVIDERS, provide(APP_BASE_HREF, {useValue: '/'})]
+    directives: [ROUTER_DIRECTIVES]
 })
 @RouteConfig([
     {path: '/...', name:'WebSiteComponent',  component: WebSiteComponent, useAsDefault:true }
@@ -24,4 +23,4 @@ class Paillons {
 
 }
 
-bootstrap(Paillons);
+bootstrap(Paillons, [ROUTER_PROVIDERS, provide(APP_BASE_HREF, {useValue: '/'})]);
