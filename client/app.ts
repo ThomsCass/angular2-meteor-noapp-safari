@@ -1,7 +1,7 @@
 import 'reflect-metadata';
 import 'zone.js/dist/zone';
 
-import {Component, provide} from '@angular/core';
+import {Component, provide, enableProdMode} from '@angular/core';
 import {APP_BASE_HREF} from '@angular/common';
 
 import {bootstrap} from 'angular2-meteor-auto-bootstrap';
@@ -10,6 +10,7 @@ import {ROUTER_PROVIDERS, ROUTER_DIRECTIVES, RouteConfig} from '@angular/router-
 
 import {WebSiteComponent} from "./imports/website/website";
 
+enableProdMode();
 
 @Component({
     selector: 'app',
